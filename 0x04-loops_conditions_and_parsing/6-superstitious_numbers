@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# a Bash script that displays numbers from 1 to 20 with some text.
+counter=1
+while ((counter <= 20))	
+do
+	echo "$counter"
+	case $((
+	(counter == 4)  * 1 +
+	(counter == 9)  * 2 +
+	(counter == 17) * 3)) in
+
+	(1) echo "bad luck from China";; 
+	(2) echo "bad luck from Japan";;
+	(3) echo "bad luck from Italy";;
+	esac
+	((counter++))
+done
