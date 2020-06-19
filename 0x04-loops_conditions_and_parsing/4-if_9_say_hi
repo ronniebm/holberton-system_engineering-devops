@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# This script prints "Holberton School" 10 times and "Hi" 1 time
+counter=1
+while ((counter <= 10))	
+do
+	echo "Holberton School"
+	((counter++))
+	if ((counter == 10))
+	then
+		echo "Hi"
+	fi	
+done
