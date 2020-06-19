@@ -2,5 +2,5 @@
 # This script displays the content of the current directory.
 for file in "$PWD"/*
 do
-	echo "$file" | cut -d "/" -f7-
+	basename "$file" | cut -d "-" -f2
 done
