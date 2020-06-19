@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script Tell the story of /etc/passwd.
+
+awk '{ printf "%s %s\n", $1, $9 }' "apache-access.log"
