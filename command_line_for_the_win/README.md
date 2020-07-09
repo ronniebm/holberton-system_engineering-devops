@@ -3,6 +3,7 @@
 
 ## These are my personal solutions to the Holberton's command challenge:
 
+![enter image description here](./images/img01.jpg)
 ### Challenge 01: Print "hello world". Hint: There are many ways to print text on the command line, one way is with the 'echo' command. Try it below and good luck!.  
 ```
 echo "hello world"
