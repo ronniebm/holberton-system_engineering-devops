@@ -1,9 +1,10 @@
 # Command challenge
 ![enter image description here](./images/img00.jpg)
 
-## These are my personal solutions to the Holberton's command challenge:
+CMD CHALLENGE is a pretty cool game challenging you on Bash skills. Everything is done via the command line and the questions are becoming increasingly complicated. It’s a good training to improve your command line skills!. Next you will find my personal solutions to the challenges:
 
-<table border=0>
+<br>
+<table border="0">
   <tr>
     <td width="10%"><img src="https://cmdchallenge.com/img/hello_world.png"></td>
     <td width="90% align="justify"><b>Challenge 01:</b><br><hr>Print "hello world". Hint: There are many ways to print text on the command line, one way is with the 'echo' command. Try it below and good luck!.</td>
@@ -12,7 +13,9 @@
 ```
 echo "hello world"
 ```
-<table border=0>
+
+<br>
+<table border="0">
   <tr>
     <td width="10%"><img src="https://cmdchallenge.com/img/current_working_directory.png"></td>
     <td width="90%" align="justify"><b>Challenge 02:</b><br><hr>Print the current working directory.</td>
