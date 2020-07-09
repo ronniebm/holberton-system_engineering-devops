@@ -3,10 +3,7 @@
 
 ## These are my personal solutions to the Holberton's command challenge:
 
-<table 
-class="egt" 
-border=0
-table-layout: fixed>
+<table border=0>
   <tr>
     <td width="10%"><img src="https://cmdchallenge.com/img/hello_world.png"></td>
     <td width="90% align="justify"><b>Challenge 01:</b><br><hr>Print "hello world". Hint: There are many ways to print text on the command line, one way is with the 'echo' command. Try it below and good luck!.</td>
@@ -15,7 +12,7 @@ table-layout: fixed>
 ```
 echo "hello world"
 ```
-<table class="egt" border=0>
+<table border=0>
   <tr>
     <td width="10%"><img src="https://cmdchallenge.com/img/current_working_directory.png"></td>
     <td width="90%" align="justify"><b>Challenge 02:</b><br><hr>Print the current working directory.</td>
