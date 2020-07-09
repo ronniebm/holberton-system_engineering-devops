@@ -311,7 +311,7 @@ cat faces.txt | head -n 25 | tail -1
     <td width="90% align="justify"><b>Challenge 26:</b><br><hr>Print the lines of the file reverse-me.txt in this directory in reverse line order so that the last line is printed first and the first line is printed last.</td>
 </table>
 
-~~~~~~~~~~~~~~~~~~~~~
+```
 In the future
 Environmental destruction will be the norm
 No longer can it be said that
@@ -320,8 +320,10 @@ It will be evident that
 My generation is apathetic and lethargic
 It is foolish to presume that
 There is hope
-~~~~~~~~~~~~~~~~~~~~~
+
 -Jonathan Reed "The Lost Generation"
+```
+<br>
 
 ```
 tac faces.txt
