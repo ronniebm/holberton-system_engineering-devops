@@ -4,7 +4,7 @@ CMD CHALLENGE is a pretty cool game challenging you on Bash skills. Everything i
 </p>
 
 <br>
-<table border="0">
+<table border="0" bordercolor=orange>
   <tr>
     <td width="10%"><img src="https://cmdchallenge.com/img/hello_world.png"></td>
     <td width="90% align="justify"><b>Challenge 01:</b><br><hr>Print "hello world". Hint: There are many ways to print text on the command line, one way is with the 'echo' command. Try it below and good luck!.</td>
