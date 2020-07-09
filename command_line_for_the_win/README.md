@@ -326,7 +326,7 @@ There is hope
 <br>
 
 ```
-tac faces.txt
+tac reverse-me.txt
 ```
 
 
