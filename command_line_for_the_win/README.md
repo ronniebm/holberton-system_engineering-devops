@@ -3,18 +3,21 @@
 
 ## These are my personal solutions to the Holberton's command challenge:
 
-<table class="egt">
+<table class="egt" border=0>
   <tr>
     <td><img src="https://cmdchallenge.com/img/hello_world.png"></td>
-    <td align="justify" >Challenge 01: Print "hello world". Hint: There are many ways to print text on the command line, one way is with the 'echo' command. Try it below and good luck!.</td>
+    <td align="justify"><b>Challenge 01:</b><br><hr>Print "hello world". Hint: There are many ways to print text on the command line, one way is with the 'echo' command. Try it below and good luck!.</td>
 </table>
 
-### Challenge 01: Print "hello world". Hint: There are many ways to print text on the command line, one way is with the 'echo' command. Try it below and good luck!.  
 ```
 echo "hello world"
 ```
+<table class="egt" border=0>
+  <tr>
+    <td><img src="https://cmdchallenge.com/img/hello_world.png"></td>
+    <td align="justify"><b>Challenge 02:</b><br><hr>Print the current working directory.</td>
+</table>
 
-### Challenge 02: Print the current working directory.
 ```
 pwd
 ```
