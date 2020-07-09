@@ -3,8 +3,8 @@
 
 ## These are my personal solutions to the Holberton's command challenge:
 
-| (https://cmdchallenge.com/img/hello_world.png) | Print "hello world". Hint: There are many ways to print text on the command line, one way is with the 'echo' command. Try it below and good luck! |
-|------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![ enter image description here ] (https://cmdchallenge.com/img/hello_world.png) | Challenge 01: Print "hello world". Hint: There are many ways to print text on the command line, one way is with the 'echo' command. Try it below and good luck!. |
+|----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 ![enter image description here](https://cmdchallenge.com/img/hello_world.png)
 ### Challenge 01: Print "hello world". Hint: There are many ways to print text on the command line, one way is with the 'echo' command. Try it below and good luck!.  
