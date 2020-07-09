@@ -276,7 +276,7 @@ find * -type f | tr ' ' '.'
 </table>
 
 ```
-find -name '*.class' -printf '%h\n' | sort -u
+find -name '*.tf' -printf '%h\n' | sort -u
 ```
 
 
