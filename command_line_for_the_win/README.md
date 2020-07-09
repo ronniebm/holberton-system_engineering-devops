@@ -1,7 +1,7 @@
-# Command challenge
 ![enter image description here](./images/img00.jpg)
-
+<p align="justify">
 CMD CHALLENGE is a pretty cool game challenging you on Bash skills. Everything is done via the command line and the questions are becoming increasingly complicated. It’s a good training to improve your command line skills!. Next you will find my personal solutions to the challenges:
+</p>
 
 <br>
 <table border="0">
