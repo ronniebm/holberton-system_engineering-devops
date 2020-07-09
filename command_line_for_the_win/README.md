@@ -4,11 +4,10 @@
 Command interpreter to manage your AirBnB objects.
 This is the first step towards building your first full web application: the AirBnB clone. This first step is very important because you will use what you build during this project with all other following projects: HTML/CSS templating, database storage, API, front-end integration…
 
-### challenge 01: Print "hello world". Hint: There are many ways to print text on the command line, one way is with the 'echo' command. Try it below and good luck!.
-
+### **Challenge 01:** Print "hello world". Hint: There are many ways to print text on the command line, one way is with the 'echo' command. Try it below and good luck!.  
+The solution was:
 ```
-codigo
-
+echo "hello world"
 ```
 
 ## :octocat: Contributors 
