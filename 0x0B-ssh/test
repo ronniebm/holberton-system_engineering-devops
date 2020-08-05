@@ -1,0 +1,26 @@
+File Edit Options Buffers Tools Help                                                                 
+# 1. creating .ssh/config file with puppet.                                                          
+                                                                                                     
+file { '/.ssh/config':                                                                               
+ensure  => 'file',                                                                                   
+path    => $config,                                                                                  
+mode    => '0600',                                                                                   
+owner   => 'root',                                                                                   
+group   => 'root',                                                                                   
+content => 'Host holberton                                                                           
+    HostName 35.243.144.124                                                                          
+    User ubuntu                                                                                      
+    Port 22                                                                                          
+    IdentityFile ~/.ssh/holberton                                                                    
+                                                                                                     
+Host *                                                                                               
+    User root                                                                                        
+    Compression yes'                                                                                 
+}                                                                                                    
+
+# -------------------------------
+# 2. Executing ssh.                                                                                  
+exec { 'ssh':                                                                                        
+command  => 'ssh -v holberton',                                                                      
+provider => 'shell'                                                                                  
+}
