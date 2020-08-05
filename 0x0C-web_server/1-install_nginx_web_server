@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-# This scripts installs nginx in a new ubuntu machine.                                               
-sudo apt update
-sudo -y apt-get install curl
-sudo -y apt-get install nginx
-sudo ufw allow 'Nginx Full'
+# This scripts installs nginx in a new ubuntu machine.
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get -y install nginx
 sudo service nginx start
-sudo echo 'Holberton School' > /var/www/html/index.html
+sudo echo 'Holberton School' > /usr/share/nginx/html/index.html
