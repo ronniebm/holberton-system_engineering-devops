@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# This scripts installs nginx in a new ubuntu machine.                                               
+sudo apt update
+wait
+sudo -y apt-get install curl
+wait
+sudo -y apt-get install nginx
+wait
+sudo ufw allow 'Nginx Full'
+rm /var/www/html/index*.html
+echo '<!DOCTYPE html>                                                                                
+<html lang="en">                                                                                     
+<head>                                                                                               
+    <meta charset="UTF-8">                                                                           
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">                           
+    <title>welcome</title>                                                                           
+</head>                                                                                              
+<body>                                                                                               
+    <h1>Holberton School</h1>                                                                        
+</body>                                                                                              
+</html>' > /var/www/html/index.html
