@@ -5,4 +5,4 @@ sudo -y apt-get install curl
 sudo -y apt-get install nginx
 sudo ufw allow 'Nginx Full'
 sudo service nginx start
-echo 'Holberton School' > /var/www/html/index.html
+sudo echo 'Holberton School' > /var/www/html/index.html
