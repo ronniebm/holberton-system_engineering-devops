@@ -1,6 +1,6 @@
 # customizing HTTP header with Puppet.
 exec { 'update':
-  command  => 'sudo apt-get update',
+  command  => 'apt-get update',
 }
 
 -> package { 'nginx':
@@ -14,6 +14,6 @@ exec { 'update':
   line   => "add_header X-Served-By ${hostname};",
 }
 
--> exec { 'nginx_restart':
-  command => 'sudo service nginx restart',
+-> exec { 'nginx_run':
+  command => 'service nginx start',
 }
