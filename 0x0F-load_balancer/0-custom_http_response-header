@@ -3,6 +3,5 @@
 sudo apt-get update
 sudo apt-get -y install nginx
 HOSTNAME="$(uname -n)"
-echo "$HOSTNAME"
 sed -i "/root /var/www/html/a add_header X-Served-By $HOSTNAME;" /etc/nginx/sites-available/default
 service nginx restart
