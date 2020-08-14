@@ -5,11 +5,11 @@ exec {'update':
 -> package {'nginx':
   ensure => 'present',
 }
--> file_line { 'http_header':
+-> file_line { 'header':
   path  => '/etc/nginx/nginx.conf',
   match => 'http {',
   line  => "http {\n\tadd_header X-Served-By \"${hostname}\";",
 }
--> exec {'run2':
+-> exec {'start':
   command => '/usr/sbin/service nginx start',
 }
