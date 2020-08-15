@@ -14,7 +14,7 @@
 
 ### Personal Procedural task to solve:
 1) check if nginx is running:
-<br>&emsp; ```service nginx status```
+<br> > service nginx status
 <br>
 2) check if nginx.cnf file has syntax issues:
 <br>&emsp; ```nginx -t```
