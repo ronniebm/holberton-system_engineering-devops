@@ -21,17 +21,17 @@ When i run the script of previous project (task4), my <b>Nginx</b> web server wa
 1. execute this command to erase ALL about nginx:  
 &emsp; ```sudo apt-get purge nginx nginx-common```  
 
-2. optional step (only if step 1. doesn't work):
+2. optional step (only if step 1. doesn't work):  
 &emsp; ```sudo apt-get remove nginx-core nginx-full nginx-light nginx-extra nginx-naxsi nginx-common```  
 
-For install the 'HAproxy' load balancer:
+For install the 'HAproxy' load balancer:  
 &emsp; ```sudo apt update```  
 &emsp; ```sudo apt-get -y install haproxy```  
 
-After HAproxy installation, we must verify that is working:
+After HAproxy installation, we must verify that is working:  
 &emsp; ```sudo systemctl status haproxy```
 
-<p align="left">&emsp; <img src="images/haproxy.png" width=60%/></p>
+<p align="left">&emsp; <img src="images/haproxy.png" width=60%/></p>  
 
 Remember, The HAproxi config file is located in directory:  
 &emsp;&emsp;<b>/etc/haproxy/haproxy.cfg </b>
