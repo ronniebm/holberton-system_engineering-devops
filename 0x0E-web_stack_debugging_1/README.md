@@ -9,44 +9,43 @@
 ### Personal Review:
 - we received a container with Ubuntu 14 OS, and an Nginx Webserver installed.
 - when using ```curl 0:80``` on terminal, it shows message:
-&emsp;&emps;"curl: (7) Failed to connect to 0 port 80: Connection refused".
+<br>&emsp;&emsp;"curl: (7) Failed to connect to 0 port 80: Connection refused".
 - Then we must find what's happening, and solve it.
 
 ### Personal Procedural task to solve:
 1) check if nginx is running:
-&emsp;```service nginx status```
-
+<br>&emsp;```service nginx status```
+<br>
 2) check if nginx.cnf file has syntax issues:
-&emsp;```nginx -t```
-
+<br>&emsp;```nginx -t```
+<br>
 3) check if for some reason there is an apache webserver previously installed:
-&emsp;```sudo apache2 -v```
-
+<br>&emsp;```sudo apache2 -v```
+<br>
 4) check if there is some 'ufw' (uncomplicated firewall installed or active):
-&emsp;```sudo ufw -v```
-
+<br>&emsp;```sudo ufw -v```
+<br>
 5) check port status with 'netstat' command:
-&emsp;```netstat -tulpn```
-
-5.a) Optional (if only want to show what's happening on port 80):
-&emsp;```netstat -tulpn | grep :80```
-
+<br>&emsp;```netstat -tulpn```
+<br>
+5a) Optional (if only want to show what's happening on port 80):
+<br>&emsp;```netstat -tulpn | grep :80```
+<br>
 6) Nginx <b>/etc/nginx/sites-enabled/</b> must contain ONLY a softlink to the 'default' file,
 which is trully located in <b>/etc/nginx/sites-available</b> !!!
-
+<br>
 7) We found that which really was inside <b>/etc/nginx/sites-enabled</b> was a 'default' file instead of a soft link. So we proceed to delete that default file and create the soft link to the trully 'default' file, this way:
-&emsp;&emsp;```sudo rm -f /etc/nginx/sites-enabled/```
-&emsp;&emsp;```sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default```
-
+<br>&emsp;&emsp;```sudo rm -f /etc/nginx/sites-enabled/```
+<br>&emsp;&emsp;```sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default```
+<br>
 8) Then we need to start again Nginx service:
-&emsp;&emsp;```sudo service nginx start```
-
+<br>&emsp;&emsp;```sudo service nginx start```
+<br>
 9) Then we do again a 'curl command' on port 80, to verify if there's http response:
-&emsp;&emsp;```curl 0:80```
-
-&emsp;&emsp;<img src="/images/01.png"/>
-
+<br>&emsp;&emsp;```curl 0:80```
+<br>&emsp;&emsp;<img src="images/01.png"/>
+<br>
 10) now everything is working ok with nginx !!!.
 
 ---
-git_user: ronniebm  /  email: ronnie.coding@gmail.com
+    git_user: ronniebm  /  email: ronnie.coding@gmail.com
