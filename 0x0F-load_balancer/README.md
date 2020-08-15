@@ -30,7 +30,7 @@ For install the 'HAproxy' load balancer:
 After HAproxy installation, we must verify that is working:
 &emsp; ```sudo systemctl status haproxy```
 
-<p align="left">&emsp; <img src="/images/haproxy.png" width=60%/></p>
+<p align="left">&emsp; <img src="./images/haproxy.png" width=60%/></p>
 
 Remember, The HAproxi config file is located in directory:  
 &emsp;&emsp;<b>/etc/haproxy/haproxy.cfg </b>
@@ -40,4 +40,4 @@ Open the haproxy.cfg and you will find two sections called:
 - global ----- It contains config. of HAproxy Itself (parameters indented).  
 - defaults --- It contains default values of HAproxy behavior (indented).  
 
-<p align="left">&emsp; <img src="/images/haproxy_config.png" width=60% style="border-style: dotted solid;"/></p>
+<p align="left">&emsp; <img src="./images/haproxy_config.png" width=60% style="border-style: dotted solid;"/></p>
