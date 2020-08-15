@@ -26,6 +26,7 @@
 > netstat -tulpn
 5a) Optional (if only want to show what's happening on port 80):
 > netstat -tulpn | grep :80
+<br>
 6) Nginx <b>/etc/nginx/sites-enabled/</b> must contain ONLY a softlink to the 'default' file,
 which is trully located in <b>/etc/nginx/sites-available</b> !!!
 <br>
