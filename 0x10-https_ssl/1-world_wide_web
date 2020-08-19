@@ -14,7 +14,11 @@ function displayAll() {
 
 # ********** MAIN PROGRAM **********************
 
-if [ "$1" ];
-then
-    displayAll 'www' 'lb-01' 'web-01' 'web-02'
+if [ $2 ]; then
+	subdomain=$2
+	echo -n "The subdomain $2 is a "
+	dig "$subdomain"."$domain" | grep -A1 'ANSWER SECTION:' | tail -n1 | awk '{print $4 " record and points to " $5}'
+else
+	displayAll 'www' 'lb-01' 'web-01' 'web-02'
 fi
+
