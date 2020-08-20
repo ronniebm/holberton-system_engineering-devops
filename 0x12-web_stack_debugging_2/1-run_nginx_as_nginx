@@ -2,7 +2,7 @@
 # Configures NGINX to run as nginx user (not root).
 
 # 1. Kill nginx process (neccesary).
-pkill nginx
+sudo service nginx stop
 
 # 2. Change NGINX permissions on the config files.
 chown nginx:nginx /etc/nginx/nginx.conf
