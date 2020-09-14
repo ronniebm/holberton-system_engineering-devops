@@ -23,5 +23,5 @@ print("Employee {} is done with tasks({}/{}):".format(name, done, tasks))
 
 for task in list_tasks.json():
     if task.get("completed"):
-        print("\t", end="")
+        print("\t ", end="")
         print(task.get("title"))
