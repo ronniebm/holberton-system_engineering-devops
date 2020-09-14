@@ -2,8 +2,8 @@
 """a Python script to export data in the CSV format."""
 
 if __name__ == "__main__":
-    import requests
     import csv
+    import requests
     from sys import argv
 
     API_URL = "https://jsonplaceholder.typicode.com/"
@@ -16,7 +16,10 @@ if __name__ == "__main__":
                       'USERNAME',
                       'TASK_COMPLETED_STATUS',
                       'TASK_TITLE']
-        writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+        writer = csv.DictWriter(csv_file,
+                                fieldnames=fieldnames,
+                                quotechar='"',
+                                quoting=csv.QUOTE_ALL)
 
         writer.writeheader()
 
