@@ -16,7 +16,7 @@ user_name = user.json().get("username")
 
 with open('{}.csv'.format(argv[1]), mode='w') as csv_file:
     fieldnames = ['USER_ID', 'USERNAME', 'TASK_COMPLETED_STATUS', 'TASK_TITLE']
-    writer = csv.DictWriter(csv_file, fieldnames=fieldnames, quotechar="'")
+    writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
 
     writer.writeheader()
 
