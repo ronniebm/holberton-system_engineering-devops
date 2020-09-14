@@ -12,21 +12,13 @@ if __name__ == "__main__":
     user_name = user.json().get("username")
 
     with open('{}.csv'.format(argv[1]), mode='w') as csv_file:
-        fieldnames = ['USER_ID',
-                      'USERNAME',
-                      'TASK_COMPLETED_STATUS',
-                      'TASK_TITLE']
-        writer = csv.DictWriter(csv_file,
-                                fieldnames=fieldnames,
-                                quotechar='"',
-                                quoting=csv.QUOTE_ALL)
-
-        writer.writeheader()
+        writer = csv.writer(csv_file,
+                            delimiter=',',
+                            quotechar='"',
+                            quoting=csv.QUOTE_ALL)
 
         for task in list_tasks.json():
-            to_do = task.get("title")
-            state = str(task.get("completed"))
-            writer.writerow({'USER_ID': argv[1],
-                             'USERNAME': user_name,
-                             'TASK_COMPLETED_STATUS': state,
-                             'TASK_TITLE': to_do})
+            writer.writerow([argv[1],
+                             user_name,
+                             task.get('completed'),
+                             task.get('title')])
