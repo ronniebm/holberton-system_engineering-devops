@@ -14,7 +14,7 @@ def top_ten(subreddit):
     headers = {'User-Agent': 'ronnie'}
     arg1 = {"limit": 10}
     resp = requests.get(url, params=arg1, headers=headers).json()
-    list = resp.get('data').get('children')
+    list = resp.get('data', {}).get('children', None)
 
     if list:
         for item in list:
