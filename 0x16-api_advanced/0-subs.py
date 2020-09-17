@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-0-subs
+1-top_ten
 """
 import requests
 
@@ -12,7 +12,6 @@ def number_of_subscribers(subreddit):
     """
     url = "https://api.reddit.com/r/{}/about".format(subreddit)
     headers = {'User-Agent': 'ronnie'}
-    req = requests.get(url, headers=headers)
-    subscribers = req.json().get('data').get('subscribers')
+    resp = requests.get(url, headers=headers)
 
-    return(subscribers)
+    return resp.json().get('data', {}).get('subscribers', 0)
